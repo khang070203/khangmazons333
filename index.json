@@ -1,76 +1,76 @@
 [
 {
-	"uri": "/2-creates3/2.1-create/",
+	"uri": "https://khang070203.github.io/khangmazons333/2-creates3/2.1-create/",
 	"title": "Create Hello from S3",
 	"tags": [],
 	"description": "",
 	"content": "Create hello with S3 on AWS AccessAWS Management Console. In the search bar search for S3 and select S3 Create S3 In AWS S3 select Create a bucket In the Create bucket interface, select: General purpose Bucket name:my-hello-world-bucket ACLs enabled Choose the right zone to optimize access speed and reduce latency for users.\nSelect Create bucket "
 },
 {
-	"uri": "/1-introduce/",
+	"uri": "https://khang070203.github.io/khangmazons333/1-introduce/",
 	"title": "Introduction To Amazon S3 and CloudFront",
 	"tags": [],
 	"description": "",
 	"content": "Introduce S3 In this lab, we will explore how to use Amazon S3 to build a simple, publicly accessible file storage solution over the Internet. The lab will walk you through creating an S3 bucket, uploading a file, and configuring public access so that the file can be accessed via a public URL. The lab will help you understand how S3 stores data, manages access, and how to use S3 to serve static content (such as a “Hello World” HTML page) to the web.\nCloudFront Amazon CloudFront is a content delivery network (CDN) service provided by Amazon Web Services (AWS) that speeds up the delivery of data such as images, videos, applications, and other data files to users around the world. CloudFront works by temporarily storing (caching) content at global network locations (Edge Locations) close to end users, helping to reduce latency when users access content from the nearest servers.\n"
 },
 {
-	"uri": "/",
+	"uri": "https://khang070203.github.io/khangmazons333/",
 	"title": "S3 Essentials: Create, Upload, and Share",
 	"tags": [],
 	"description": "",
 	"content": "S3 Essentials: Create, Upload, and Share Overall Contents Introduce Create S3 Create CloudFront Clean up "
 },
 {
-	"uri": "/2-creates3/",
+	"uri": "https://khang070203.github.io/khangmazons333/2-creates3/",
 	"title": "Tạo với Hello from S3",
 	"tags": [],
 	"description": "",
 	"content": "Amazon S3 (Simple Storage Service) is a powerful cloud storage service from AWS that provides flexible and efficient storage and management of data (files, images, videos). S3 allows you to store large amounts of data without having to manage infrastructure, while providing high availability and reliability.\nBy using Amazon S3, you get the following advantages:\nExpandable Storage : Unlimited scalability for data storage. High Availability : Data is automatically backed up across multiple regions, ensuring it is always available. Flexible access : Easily configure access permissions for buckets and files, from fully public to restricted to specific users via AWS IAM. Easy content sharing : Static content such as web pages and images can be shared via public URLs or sharing links. Integrate with other AWS services : Seamlessly integrate with many other AWS services like Lambda, CloudFront, and Glacier. With these advantages, Amazon S3 becomes an ideal solution for storing and serving content, helping you save time and costs in data management.\nImplementation process Create S3 Bucket : Create a new S3 bucket to store files. Upload File : Upload a simple HTML file (e.g. “index.html” containing the text “Hello World”) to the newly created bucket. Configure Access Permissions : Set public permissions for uploaded files, ensuring that files can be accessed from the Internet. Access File via URL : Test access by opening the file\u0026rsquo;s URL in a browser to view its contents. Delete Files and Buckets : Delete files and buckets to manage resources and complete the process. Content Create S3 Upload File Configure Access Rights Test File Live "
 },
 {
-	"uri": "/2-creates3/2.2upfile/",
+	"uri": "https://khang070203.github.io/khangmazons333/2-creates3/2.2upfile/",
 	"title": "Upload File",
 	"tags": [],
 	"description": "",
 	"content": " upload file Bight corner of the screen select View details Click Upload\nEveryone upload a simple html file like hello and select Add files and click Upload\nEveryone please create a simple html file like this\nHTML MẪU \u0026lt;html\u0026gt; \u0026lt;head\u0026gt;\u0026lt;title\u0026gt;Hello World\u0026lt;/title\u0026gt;\u0026lt;/head\u0026gt; \u0026lt;body\u0026gt;\u0026lt;h1\u0026gt;Hello World\u0026lt;/h1\u0026gt;\u0026lt;/body\u0026gt; \u0026lt;/html\u0026gt; After everyone selects the html file, everyone selects Open. Please check if your html file has been uploaded. If so, please click Upload. "
 },
 {
-	"uri": "/2-creates3/2.3cauhinh/",
+	"uri": "https://khang070203.github.io/khangmazons333/2-creates3/2.3cauhinh/",
 	"title": "Configure Access Rights",
 	"tags": [],
 	"description": "",
 	"content": " When everyone successfully UpLoads, it will return to the page that you just UpLoaded. Next select index.html In the Access control list (ACL) section, select bucket owner enforce In the Object Ownership interface: Select ACLs enabled. Select I acknowledge that ACLs will be restored. Select Bucket owner preferred. Select Save changes. then everyone go back to index.html page Select Permissions and select Edit in the Block public access (bucket settings) section 3. First select Edit Block public access (bucket settings)\nProceed to Save changes Everyone please confirm to grant access. Select Edit in the Bucket policy section Everyone proceed to grant public access The code I used to grant permissions {\r\u0026#34;Version\u0026#34;: \u0026#34;2012-10-17\u0026#34;,\r\u0026#34;Statement\u0026#34;: [\r{\r\u0026#34;Sid\u0026#34;: \u0026#34;PublicReadGetObject\u0026#34;,\r\u0026#34;Effect\u0026#34;: \u0026#34;Allow\u0026#34;,\r\u0026#34;Principal\u0026#34;: \u0026#34;*\u0026#34;,\r\u0026#34;Action\u0026#34;: \u0026#34;s3:GetObject\u0026#34;,\r\u0026#34;Resource\u0026#34;: \u0026#34;arn:aws:s3:::my-hello-world-bucket-2024/*\u0026#34;\r}\r]\r} Click Save changes This shows that everyone has successfully granted permission. "
 },
 {
-	"uri": "/3-cloudfront/",
+	"uri": "https://khang070203.github.io/khangmazons333/3-cloudfront/",
 	"title": "CREATE CLOUDFONT",
 	"tags": [],
 	"description": "",
 	"content": "Create Cloudfront Access AWS Management Console. In the search bar search for CloudFront and select CloudFront. In CloudFront Select Create distribution In Create distribution Select my-hello-world-bucket-2024 mà chúng ta đã tạo bên S3 In this name section, when I select my-hello-world-bucket-2024 , it will automatically fill in. Select Legacy access identities. Select Create new OAI Create In the Bucket policy section, select Yes, update the bucket policy , it will automatically update S3 in the Bucket policy section. In Enable Origin Shield select No\nSelect yes in the Compress objects automatically section\nSelect HTTP and HTTPS in the Viewer protocol policy section.\nSelect GET, HEAD in Allowed HTTP methods section Select No in the Restrict viewer access section.\nSelect Cache policy and origin request policy (recommended) in the Cache key and origin requests section\nIn CachingOptimized should be Recommended for S3 Select Enable security protections in the Web Application Firewall (WAF) Select Use all edge locations (best performance) in the Price class\nSelect HTTP/2 in the Supported HTTP versions\nSelect Off Standard logging\nSelect On in the IPv6\nSelect Create distribution Check if the S3 Bucket policy has been updated when Distributions are created successfully check S3 into Permissions Check Bucket policy to see if it has been updated Check Domain name URL If the URL appears like this, it means we have accessed it successfully. "
 },
 {
-	"uri": "/4-s3xoa/",
+	"uri": "https://khang070203.github.io/khangmazons333/4-s3xoa/",
 	"title": "Clean up resources",
 	"tags": [],
 	"description": "",
 	"content": " Delete the resource we made in the lesson Delete previously uploaded index.html Select index.html and click Delete Clearly permanently delete and select delete objects to proceed with the deletion. my-hello-work-bucket-2024 Delete Create bucket and I created Select my-hello-work-bucket and select Delete Select my-hello-work-bucket and click delete bucket Remove CloudFront Select the Distributions section that you have created. Select Disable Select Disable to stop Select the Distributions section that you have created Select Delete "
 },
 {
-	"uri": "/2-creates3/2.4-testcauhinh/",
+	"uri": "https://khang070203.github.io/khangmazons333/2-creates3/2.4-testcauhinh/",
 	"title": "Test File Live",
 	"tags": [],
 	"description": "",
 	"content": "Test configuration In this step, we will create connections to our EC2 servers, located in both public and private subnets.\nSelect index.html and select Object URL to see if you can access it. If it appears as shown, then you have successfully accessed it. "
 },
 {
-	"uri": "/categories/",
+	"uri": "https://khang070203.github.io/khangmazons333/categories/",
 	"title": "Categories",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "/tags/",
+	"uri": "https://khang070203.github.io/khangmazons333/tags/",
 	"title": "Tags",
 	"tags": [],
 	"description": "",

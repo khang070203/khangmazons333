@@ -1,76 +1,76 @@
 [
 {
-	"uri": "/vi/",
+	"uri": "https://khang070203.github.io/khangmazons333/vi/",
 	"title": "Cơ Bản Về S3: Tạo, Tải Lên và Chia Sẻ",
 	"tags": [],
 	"description": "",
 	"content": "Cơ Bản Về S3 và CloudFront Tổng quan Nội Dung Giới Thiệu Tạo S3 Tạo CloudFront Dọn dẹp "
 },
 {
-	"uri": "/vi/1-introduce/",
+	"uri": "https://khang070203.github.io/khangmazons333/vi/1-introduce/",
 	"title": "Giới thiệu Và Amazon S3 và CloudFront",
 	"tags": [],
 	"description": "",
 	"content": "Giới thiệu S3 Trong bài lab này, chúng ta sẽ khám phá cách sử dụng Amazon S3 để xây dựng một giải pháp lưu trữ file đơn giản, có thể truy cập công khai qua Internet. Mục tiêu của bài lab là hướng dẫn bạn tạo một bucket S3, tải lên một file, và cấu hình quyền truy cập công khai để file có thể được truy cập thông qua một URL công khai. Bài lab sẽ giúp bạn hiểu cách thức S3 lưu trữ dữ liệu, quản lý quyền truy cập và cách sử dụng S3 để phục vụ nội dung tĩnh (như trang HTML \u0026ldquo;Hello World\u0026rdquo;) trên web.\nCloudFront Amazon CloudFront là một dịch vụ phân phối nội dung (CDN - Content Delivery Network) được cung cấp bởi Amazon Web Services (AWS), giúp tăng tốc độ phân phối dữ liệu như hình ảnh, video, ứng dụng và các file dữ liệu khác đến người dùng trên toàn cầu. CloudFront hoạt động bằng cách lưu trữ tạm thời (caching) nội dung tại các vị trí mạng lưới toàn cầu (Edge Locations) gần với người dùng cuối, giúp giảm độ trễ khi người dùng truy cập vào nội dung từ các server gần nhất.\n"
 },
 {
-	"uri": "/vi/2-creates3/2.1-create/",
+	"uri": "https://khang070203.github.io/khangmazons333/vi/2-creates3/2.1-create/",
 	"title": "Tạo Hello from S3",
 	"tags": [],
 	"description": "",
 	"content": "Tạo hello với S3 trên AWS Truy cập AWS Management Console. Trong thanh tìm kiếm tìm S3 và chọn S3 Tạo S3 Trong AWS S3 chọn vào Create a bucket Trong giao diện Create bucket chọn: General purpose Bucket name:my-hello-world-bucket-2024 ACLs disabled (recommended) Chọn vùng phù hợp để tối ưu hóa tốc độ truy cập và giảm độ trễ cho người dùng.\nChọn Create bucket "
 },
 {
-	"uri": "/vi/2-creates3/2.2upfile/",
+	"uri": "https://khang070203.github.io/khangmazons333/vi/2-creates3/2.2upfile/",
 	"title": "Tải File lên",
 	"tags": [],
 	"description": "",
 	"content": " tải lên file bên gốc phải màn hình chọn View details Chọn vào Upload Mọi người hãy tải lên một file html đơn giản chứa nội dung như hello và chọn Add files và bấm vào Upload HTML MẪU Mọi người hãy tạo một file html đơn giản như thế này \u0026lt;html\u0026gt; \u0026lt;head\u0026gt;\u0026lt;title\u0026gt;Hello World\u0026lt;/title\u0026gt;\u0026lt;/head\u0026gt; \u0026lt;body\u0026gt;\u0026lt;h1\u0026gt;Hello World\u0026lt;/h1\u0026gt;\u0026lt;/body\u0026gt; \u0026lt;/html\u0026gt; Sao khi mội người chọn file html lên thì mọi người hãy chọn vào Open Mọi người hãy kiểm trả xem file html của mọi người đã được tải lên chưa nếu rồi thì mọi người hãy bấm vào Upload "
 },
 {
-	"uri": "/vi/2-creates3/",
+	"uri": "https://khang070203.github.io/khangmazons333/vi/2-creates3/",
 	"title": "Tạo với Hello from S3",
 	"tags": [],
 	"description": "",
 	"content": "Amazon S3 (Simple Storage Service) là một dịch vụ lưu trữ đám mây mạnh mẽ của AWS, cung cấp khả năng lưu trữ và quản lý dữ liệu (tệp, hình ảnh, video) một cách linh hoạt và hiệu quả. S3 cho phép bạn lưu trữ một lượng lớn dữ liệu mà không cần phải quản lý cơ sở hạ tầng, đồng thời cung cấp tính khả dụng cao và độ tin cậy.\nVới việc sử dụng Amazon S3, bạn sẽ có được những ưu điểm sau:\nLưu trữ mở rộng: Có khả năng mở rộng không giới hạn cho việc lưu trữ dữ liệu. Tính khả dụng cao: Dữ liệu được sao lưu tự động trên nhiều vùng khác nhau, đảm bảo luôn có sẵn. Quyền truy cập linh hoạt: Cấu hình quyền truy cập dễ dàng cho bucket và tệp, từ công khai hoàn toàn đến hạn chế cho một số người dùng cụ thể thông qua AWS IAM. Chia sẻ nội dung dễ dàng: Có thể chia sẻ nội dung tĩnh như trang web và hình ảnh thông qua URL công khai hoặc liên kết chia sẻ. Tích hợp với dịch vụ AWS khác: Tích hợp liền mạch với nhiều dịch vụ AWS khác như Lambda, CloudFront và Glacier. Với những ưu điểm này, Amazon S3 trở thành một giải pháp lý tưởng cho việc lưu trữ và phục vụ nội dung, giúp bạn tiết kiệm thời gian và chi phí trong quản lý dữ liệu.\nQuy trình thực hiện Tạo Bucket S3: Tạo một bucket S3 mới để lưu trữ file. Tải lên File: Tải lên một file HTML đơn giản (ví dụ: \u0026ldquo;index.html\u0026rdquo; chứa nội dung \u0026ldquo;Hello World\u0026rdquo;) vào bucket vừa tạo. Cấu hình Quyền Truy cập: Thiết lập quyền công khai cho file đã tải lên, đảm bảo rằng file có thể được truy cập từ Internet. Truy cập File qua URL: Kiểm tra quyền truy cập bằng cách mở URL của file trong trình duyệt để xem nội dung. Xóa File và Bucket: Xóa file và bucket để quản lý tài nguyên và hoàn tất quy trình. Nội dung Tạo S3 Tải File lên Cấu Hình Quyền Truy Cập Test File Trực Tiếp "
 },
 {
-	"uri": "/vi/2-creates3/2.3cauhinh/",
+	"uri": "https://khang070203.github.io/khangmazons333/vi/2-creates3/2.3cauhinh/",
 	"title": "Cấu Hình Quyền Truy Cập",
 	"tags": [],
 	"description": "",
 	"content": " khi mọi người UpLoad thành công thì nó sẽ trả về trang mà mình vừa thực hiện UpLoad tiếp theo chọn vào index.html Trong phần Access control list (ACL) chọn vào bucket owner enforced Trong giao diện Object Ownership: Chọn ACLs enabled. Chọn I acknowledge that ACLs will be restored. Chọn Bucket owner preferred. Chọn Save changes. sau đó mọi người hãy quay lại trang index.html Chọn vào Permissions và chọn vào Edit của phần Block public access (bucket settings) Đầu tiên chọn vào Edit Block public access (bucket settings) Tiến hành Save changes Mọi người hãy rõ confirm để cấp quyền truy cập Chọn vào Edit của phần Bucket policy Mọi người tiền hành cấp quyền truy cập công khai Đoạn mã mình thực hiện cấp quyền {\r\u0026#34;Version\u0026#34;: \u0026#34;2012-10-17\u0026#34;,\r\u0026#34;Statement\u0026#34;: [\r{\r\u0026#34;Sid\u0026#34;: \u0026#34;PublicReadGetObject\u0026#34;,\r\u0026#34;Effect\u0026#34;: \u0026#34;Allow\u0026#34;,\r\u0026#34;Principal\u0026#34;: \u0026#34;*\u0026#34;,\r\u0026#34;Action\u0026#34;: \u0026#34;s3:GetObject\u0026#34;,\r\u0026#34;Resource\u0026#34;: \u0026#34;arn:aws:s3:::my-hello-world-bucket-2024/*\u0026#34;\r}\r]\r} Bấm vào Save changes Hiện ra như này là mọi người đã cấp quyền thành công "
 },
 {
-	"uri": "/vi/3-cloudfront/",
+	"uri": "https://khang070203.github.io/khangmazons333/vi/3-cloudfront/",
 	"title": "TẠO CLOUDFRONT",
 	"tags": [],
 	"description": "",
 	"content": "Tạo Cloudfront Truy cập AWS Management Console. Trong thanh tìm kiếm tìm CloudFront và chọn CloudFront Trong CloudFront Chọn vào Create distribution Trong Create distribution Chọn vào my-hello-world-bucket-2024 mà chúng ta đã tạo bên S3 Ở phần name này khi mình chọn vào my-hello-world-bucket-2024 thì nó sẽ tự động điền Chọn vào Legacy access identities chọn Create new OAI Create ở phần Bucket policy chọn vào Yes, update the bucket policy thì nó sẽ tự động update S3 ở phần Bucket policy Ở Enable Origin Shield chọn No\nchọn yes ở phần Compress objects automatically\nchọn HTTP and HTTPS ở phần Viewer protocol policy\nchọn GET, HEAD ở phần Allowed HTTP methods Chọn vào No ở phần Restrict viewer access\nChọn Cache policy and origin request policy (recommended) ở phần Cache key and origin requests\nTrong CachingOptimized phải là Recommended for S3 Chọn Enable security protections ở phần Web Application Firewall (WAF) Chọn Use all edge locations (best performance) ở phần Price class\nChọn HTTP/2 ở phần Supported HTTP versions\nChọn Off Standard logging\nChọn On ở phần IPv6\nchọn Create distribution Kiểm trả xem bên S3 phần Bucket policy có update chưa khi tạo thành công Distributions kiểm tra S3 vào Permissions kiểm tra Bucket policy xem update chưa kiểm tra URL của Domain name Nếu như URL hiện ra như thế này thì tức là chúng ra đã truy cập thành công "
 },
 {
-	"uri": "/vi/4-s3xoa/",
+	"uri": "https://khang070203.github.io/khangmazons333/vi/4-s3xoa/",
 	"title": "Dọn dẹp tài nguyên",
 	"tags": [],
 	"description": "",
 	"content": " Xóa tài nguyên mà chúng ta đã thực hiện trong bài Xóa index.html đã Upload trước Chọn vào index.html và bấm vào Delete Rõ permanently delete và chọn Delete objects để tiến hành xóa Xóa Create bucket và mình đã tạo Chọn vào my-hello-work-bucket và chọn Delete Rõ my-hello-work-bucket-2024 và chọn vào Delete bucket my-hello-work-bucket-2024 Xóa CloudFront Chọn vào phần Distributions mà mình đã tạo Chọn Disable chọn Disable để dừng Chọn vào phần Distributions mà mình đã tạo chọn vào Delete "
 },
 {
-	"uri": "/vi/2-creates3/2.4-testcauhinh/",
+	"uri": "https://khang070203.github.io/khangmazons333/vi/2-creates3/2.4-testcauhinh/",
 	"title": "Test File Trực Tiếp",
 	"tags": [],
 	"description": "",
 	"content": "Test cấu hình Trong bước này, chúng ta sẽ thực hiện tạo kết nối đến các máy chủ EC2 của chúng ta, nằm trong cả public và private subnet.\nChọn vào index.html và chọn Object URL để xem thử mình có thể truy cập được chưa Nếu hiện ra như hình thì mình đã truy cập thành công "
 },
 {
-	"uri": "/vi/categories/",
+	"uri": "https://khang070203.github.io/khangmazons333/vi/categories/",
 	"title": "Categories",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "/vi/tags/",
+	"uri": "https://khang070203.github.io/khangmazons333/vi/tags/",
 	"title": "Tags",
 	"tags": [],
 	"description": "",
