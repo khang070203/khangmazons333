@@ -43,7 +43,7 @@
 },
 {
 	"uri": "https://khang070203.github.io/khangmazons333/3-cloudfront/",
-	"title": "CREATE CLOUDFONT",
+	"title": "Create CloudFront",
 	"tags": [],
 	"description": "",
 	"content": "Create Cloudfront Access AWS Management Console. In the search bar search for CloudFront and select CloudFront. In CloudFront Select Create distribution In Create distribution Select my-hello-world-bucket-2024 mà chúng ta đã tạo bên S3 In this name section, when I select my-hello-world-bucket-2024 , it will automatically fill in. Select Legacy access identities. Select Create new OAI Create In the Bucket policy section, select Yes, update the bucket policy , it will automatically update S3 in the Bucket policy section. In Enable Origin Shield select No\nSelect yes in the Compress objects automatically section\nSelect HTTP and HTTPS in the Viewer protocol policy section.\nSelect GET, HEAD in Allowed HTTP methods section Select No in the Restrict viewer access section.\nSelect Cache policy and origin request policy (recommended) in the Cache key and origin requests section\nIn CachingOptimized should be Recommended for S3 Select Enable security protections in the Web Application Firewall (WAF) Select Use all edge locations (best performance) in the Price class\nSelect HTTP/2 in the Supported HTTP versions\nSelect Off Standard logging\nSelect On in the IPv6\nSelect Create distribution Check if the S3 Bucket policy has been updated when Distributions are created successfully check S3 into Permissions Check Bucket policy to see if it has been updated Check Domain name URL If the URL appears like this, it means we have accessed it successfully. "

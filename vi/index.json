@@ -43,7 +43,7 @@
 },
 {
 	"uri": "https://khang070203.github.io/khangmazons333/vi/3-cloudfront/",
-	"title": "TẠO CLOUDFRONT",
+	"title": "Tạo CloudFront",
 	"tags": [],
 	"description": "",
 	"content": "Tạo Cloudfront Truy cập AWS Management Console. Trong thanh tìm kiếm tìm CloudFront và chọn CloudFront Trong CloudFront Chọn vào Create distribution Trong Create distribution Chọn vào my-hello-world-bucket-2024 mà chúng ta đã tạo bên S3 Ở phần name này khi mình chọn vào my-hello-world-bucket-2024 thì nó sẽ tự động điền Chọn vào Legacy access identities chọn Create new OAI Create ở phần Bucket policy chọn vào Yes, update the bucket policy thì nó sẽ tự động update S3 ở phần Bucket policy Ở Enable Origin Shield chọn No\nchọn yes ở phần Compress objects automatically\nchọn HTTP and HTTPS ở phần Viewer protocol policy\nchọn GET, HEAD ở phần Allowed HTTP methods Chọn vào No ở phần Restrict viewer access\nChọn Cache policy and origin request policy (recommended) ở phần Cache key and origin requests\nTrong CachingOptimized phải là Recommended for S3 Chọn Enable security protections ở phần Web Application Firewall (WAF) Chọn Use all edge locations (best performance) ở phần Price class\nChọn HTTP/2 ở phần Supported HTTP versions\nChọn Off Standard logging\nChọn On ở phần IPv6\nchọn Create distribution Kiểm trả xem bên S3 phần Bucket policy có update chưa khi tạo thành công Distributions kiểm tra S3 vào Permissions kiểm tra Bucket policy xem update chưa kiểm tra URL của Domain name Nếu như URL hiện ra như thế này thì tức là chúng ra đã truy cập thành công "
